@@ -8,8 +8,8 @@
       let data = '';
       let xhr = new XMLHttpRequest();
       xhr.withCredentials = true;
-      http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
       xhr.open('POST', url);
+      xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
       xhr.send(data);
 
       xhr.onload = function() {};
